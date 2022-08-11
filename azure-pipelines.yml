@@ -17,7 +17,8 @@ steps:
     scanPath: '/home/vsts/work/1/s'
     format: 'CSV'
     failOnCVSS: '7'
-    reportFilename: 'Demo scan - one'- task: Maven@3
+    reportFilename: 'Demo scan one'
+- task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
